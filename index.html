@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trams</title>
+</head>
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container ">
+      <a class="navbar-brand">
+        <h1 class="text-light">Calculate Trams</h1>
+        <h6 class="text-light fw-light">Calculates how many trams there are, based on route length, average speed and interval between every tram.</h6>
+      </a>
+    </div>
+    </nav>
+
+    <div class="container-sm">
+        <label for="routeLength" class="form-label mt-5" id="routeLengthLabel">Route Length 20 km</label>
+        <input type="range" class="form-range" min="10" max="50" step="1" value="20" id="routeLength">
+
+        <label for="averageSpeed" class="form-label mt-5" id="averageSpeedLabel">Average Speed 30 km/h</label>
+        <input type="range" class="form-range" min="10" max="70" step="1" value="30" id="averageSpeed">
+
+        <label for="tramsInterval" class="form-label mt-5" id="tramsIntervalLabel">Trams Interval 10 min</label>
+        <input type="range" class="form-range" min="1" max="60" step="1" value="10" id="tramsInterval">
+
+        <h1 id="trams">Trams: </h1>
+    </div>
+    
+</body>
+</html>
